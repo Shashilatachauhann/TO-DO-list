@@ -1,9 +1,9 @@
 const express = require('express');
-const methodOverride = require('method-override'); // Import it
+const methodOverride = require('method-override');
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
-app.use(methodOverride('_method')); // Use it as middleware
+app.use(methodOverride('_method')); 
 app.set('view engine', 'ejs');
 
 let tasks = [
